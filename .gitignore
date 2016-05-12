@@ -1,0 +1,14 @@
+
+#gitinore files
+*.mp4
+*.ogv
+*.wmv
+*.webm
+*.mov
+*.png
+*.jpg
+*.gif
+.config-codekit
+.codekit-cache/*
+
+/library/images/*
