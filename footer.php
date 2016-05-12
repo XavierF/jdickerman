@@ -34,14 +34,17 @@
           });
 
 			$('.grid').masonry({
-  		itemSelector: '.grid-item',
-  			columnWidth: 160
-				});
-			$grid.imagesLoaded().progress( function() {
-  		$grid.masonry('layout');
-			});
+	  		itemSelector: '.grid-item',
+	  			columnWidth: 160
+					});
 
+			$('.grid').magnificPopup({
+  			delegate: 'a', // child items selector, by clicking on it popup will open
+			  type: 'image',
+			  // other options
+			  gallery:{enabled: true}
 			});
+		});
 
 		</script>
 	</body>
