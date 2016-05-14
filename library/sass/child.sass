@@ -72,11 +72,13 @@ a.navbar-brand
 	text-align: center
 	width: 100%
 	float: none
-	font-size: 2.5em
+	font-size: 3em
+	font-weight: 500
 	color: $darkGrey
+	letter-spacing: .1em
 	-webkit-font-smoothing: antialiased
 	font-family: 'Advent Pro', sans-serif
-	letter-spacing: .1em
+	
 	
 .navbar-default .navbar-collapse
 	border: 0
@@ -143,6 +145,7 @@ a.navbar-brand
 	
 // HERO
 #hero
+	display: none
 	height: 450px
 	width: 100%
 	position: relative
@@ -764,6 +767,38 @@ img.mfp-img
 .mfp-gallery .mfp-image-holder .mfp-figure
 	cursor: pointer
 
+.mfp-fade.mfp-bg 
+	opacity: 0
+	-webkit-transition: all 0.30s ease-out
+	-moz-transition: all 0.30s ease-out
+	transition: all 0.30s ease-out
+
+//* overlay animate in */
+.mfp-fade.mfp-bg.mfp-ready 
+	opacity: 0.8
+
+//* overlay animate out */
+.mfp-fade.mfp-bg.mfp-removing 
+	opacity: 0
+
+
+//* content at start */
+.mfp-fade.mfp-wrap .mfp-content 
+	opacity: 0
+	-webkit-transition: all 0.30s ease-out
+	-moz-transition: all 0.30s ease-out
+	transition: all 0.30s ease-out
+
+//* content animate it */
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content 
+	opacity: 1
+
+//* content animate out */
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content 
+	opacity: 0
+
+
+
 @media screen and (max-width: 800px) and (orientation: landscape), screen and (max-height: 300px)
 	.mfp-img-mobile
 		.mfp-image-holder
@@ -815,6 +850,8 @@ img.mfp-img
 	.mfp-container
 		padding-left: 6px
 		padding-right: 6px
+
+
 
 
 

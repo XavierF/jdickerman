@@ -41,9 +41,17 @@
 			$('.grid').magnificPopup({
   			delegate: 'a', // child items selector, by clicking on it popup will open
 			  type: 'image',
+			  mainClass: 'mfp-fade',
 			  // other options
-			  gallery:{enabled: true}
+			  gallery:{enabled: true
+			  },
+			  image: {
+    // options for image content type
+    			titleSrc: 'alt'
+  			}
+    
 			});
+
 		});
 
 		</script>
