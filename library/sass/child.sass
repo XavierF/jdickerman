@@ -1,5 +1,5 @@
 
-//BRAND COLORS Jane Cresswell
+//BRAND COLORS JD
 $lightGrey: #EEEEEE
 $darkGrey: #272526
 
@@ -380,6 +380,16 @@ a.navbar-brand
 	margin-left: auto
 	margin-right: auto
 	text-align: center
+
+.page-header
+	margin: 0 0 20px
+	border-bottom: 0
+	text-align: center
+
+.page-title
+	font-weight: 400
+	letter-spacing: .3em
+
 .entry-content
 	min-height: 800px
 	h2
@@ -425,6 +435,8 @@ a.navbar-brand
 .masonry-container
 	height: 600px
 	width: 100%
+	border-left: 1px solid $lightGrey
+	border-right: 1px solid $lightGrey
 
 .grid 
 	max-width: 994px
@@ -451,17 +463,22 @@ a.navbar-brand
 
 .grid-item--width2
 	width: 320px
+
 .grid-item--width3
 	width: 480px
+
 .grid-item--width4
 	width: 640px
 
 .grid-item--height2 
 	height: 200px
+
 .grid-item--height3 
 	height: 260px
+
 .grid-item--height4 
 	height: 360px
+
 
 //---------------------------------****************** Lightbox ****************************----------------//
 // Magnific Popup CSS
@@ -966,8 +983,34 @@ p.source-org
 				font-weight: 700
 				color: black
 				margin-top: 10px
-	.slick-slide
 
+	.grid-item 
+		width: 20%
+		max-height: 120px
+		float: left
+		background: transparent
+		border: 2px solid white
+		border-radius: 5px
+		padding: 1%
+
+	.grid-item--width2
+		max-width: 320px !important
+
+	.grid-item--width3
+		max-width: 480px !important
+
+	.grid-item--width4
+		max-width: 640px !important
+
+	.grid-item--height2 
+		max-height: 200px !important
+
+	.grid-item--height3 
+		max-height: 260px !important
+
+	.grid-item--height4 
+		max-height: 360px !important
+	
 
 	.slick-prev, .slick-next
 		&:before
@@ -1028,56 +1071,6 @@ p.source-org
 		width: 100% !important
 		text-align: center !important
 		display: block !important
-	#sr_map_canvas
-		margin-left: 0
-		width: 100% !important
-
-	.sr-listing
-		width: 100%
-		margin: 10px 0 !important
-		float: left
-		display: block
-		a
-			text-align: center !important
-			background: $lightGrey
-			display: block
-			padding: 10px !important
-		div
-			a
-				padding: 10px
-				font-size: 1.5em
-			
-	.sr-photo
-		display: block
-		width: 100%
-
-	.sr-primary-data
-		display: block
-		width: 100%
-		padding: 0
-		clear: both
-		float: left
-		h4
-			margin-top: 5px
-		a
-			padding: 0 !important
-
-
-	.sr-secondary-data
-		display: block
-		width: 100%
-		clear: both
-		float: left
-
-	.sr-data-column
-		padding-left: 10px
-		&:first-child
-			padding-left: 10px !important
-			margin-right: 0 !important
-
-	.galleria-theme-classic
-		background: white !important
-		height: 300px !important
     
 
 
@@ -1150,64 +1143,7 @@ p.source-org
 	.page-title
 		text-align: center
 
-	.sr-listing
-		width: 45%
-		margin: 20px 0 0 20px !important
-		float: left
-		display: inline-block
-		a
-			text-align: center !important
-			background: $lightGrey
-			display: block
-			padding: 10px !important
-		div
-			a
-				padding: 10px
-				font-size: 1.5em
-
-	.sr-photo
-		display: block
-		width: 80% !important
-		margin: 0 auto !important
-		float: none
-
-	.sr-primary-data
-		display: block
-		width: 100%
-		height: 78px
-		padding: 0
-		clear: both
-		float: left
-		background: transparent
-		h4
-			margin-top: 0
-
-	.sr-secondary-data
-		display: block
-		width: 100%
-		clear: both
-		float: left
-		margin-top: 10px
-
-	.sr-data-column
-		display: inline-block !important
-		&:first-child
-			padding-left: 0
-			margin-right: 0 !important
-		&:nth-child(2)
-			padding-left: 0
-		li
-			font-size: 1.1em
-			font-weight: 500
-			padding: 5px 0
-	p
-		margin: 20px 0 0 20px
-		float: left
-		display: block
-		clear: both
 	
-@media s
-
 
 
 @media screen and (max-width:767px)
@@ -1277,53 +1213,7 @@ p.source-org
 	.container
 		padding: 0
 
-	.sr-listing
-		width: 47.4%
-		margin: 20px 0 0 20px !important
-		float: left
-		display: inline-block
-		a
-			text-align: center !important
-			background: $lightGrey
-			display: block
-			padding: 20px 20px 0 20px !important
-		div
-			a
-				padding: 10px
-				font-size: 1.5em
-
-	.sr-photo
-		display: block
-		width: 80% !important
-		margin: 0 auto !important
-		float: none
-
-	.sr-primary-data
-		display: block
-		width: 100%
-		height: 78px
-		padding: 0
-		clear: both
-		float: left
-		background: $lightGrey
-		h4
-			margin-top: 5px
-
-	.sr-secondary-data
-		display: block
-		width: 100%
-		clear: both
-		float: left
-
-	.sr-data-column
-		display: inline-block !important
-		&:first-child
-			padding-left: 10px
-			margin-right: 20px !important
-		li
-			font-size: 1.1em
-			font-weight: 500
-			padding: 5px 0
+	
 	p
 		margin: 20px 0 0 20px
 		float: left
@@ -1336,53 +1226,7 @@ p.source-org
 	.container
 		padding: 0
 
-	.sr-listing
-		width: 47.9%
-		margin: 20px 0 0 20px !important
-		float: left
-		display: inline-block
-		a
-			text-align: center !important
-			background: $lightGrey
-			display: block
-			padding: 20px 20px 0 20px !important
-		div
-			a
-				padding: 10px
-				font-size: 1.5em
 
-	.sr-photo
-		display: block
-		width: 80% !important
-		margin: 0 auto !important
-		float: none
-
-	.sr-primary-data
-		display: block
-		width: 100%
-		height: 78px
-		padding: 0
-		clear: both
-		float: left
-		background: $lightGrey
-		h4
-			margin-top: 5px
-
-	.sr-secondary-data
-		display: block
-		width: 100%
-		clear: both
-		float: left
-
-	.sr-data-column
-		display: inline-block !important
-		&:first-child
-			padding-left: 10px
-			margin-right: 20px !important
-		li
-			font-size: 1.1em
-			font-weight: 500
-			padding: 5px 0
 	p
 		margin: 20px 0 0 20px
 		float: left
@@ -1410,54 +1254,7 @@ p.source-org
 	.container
 		padding: 0
 
-	.sr-listing
-		width: 47.9%
-		margin: 20px 0 0 20px !important
-		float: left
-		display: inline-block
-		a
-			text-align: center !important
-			background: $lightGrey
-			display: block
-			padding: 20px 20px 0 20px !important
-		div
-			a
-				padding: 10px
-				font-size: 1.5em
-
-	.sr-photo
-		display: block
-		width: 80% !important
-		margin: 0 auto !important
-		float: none
-
-	.sr-primary-data
-		display: block
-		width: 100%
-		height: 78px
-		padding: 0
-		clear: both
-		float: left
-		background: $lightGrey
-		h4
-			margin-top: 5px
-
-	.sr-secondary-data
-		display: block
-		width: 100%
-		clear: both
-		float: left
-
-
-	.sr-data-column
-		display: inline-block !important
-		&:first-child
-			padding-left: 10px
-			margin-right: 20px !important
-		li
-			font-size: 1.1em
-			font-weight: 500
-			padding: 5px 0
+	
 	p
 		margin: 20px 0 0 20px
 		float: left
